@@ -7,7 +7,7 @@ export default function Recommend({blog}:{blog:IBlog[]}){
         <div className="justify-between flex flex-row"><p>Blog lainnya:</p>
             {blog.map((item)=>{
                 return(
-                    <div className="justify-between flex">
+                    <div className="justify-between flex" key={item.fields.slug}>
                         <div className="text-blue-700">
                         <Image
                       src={`https://${item.fields.thumbnail.fields.file.url}`}
