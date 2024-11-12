@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background-color: aliceblue;
+  --foreground: #171717;
+}
+body{
+  background-color: aliceblue;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: aliceblue;
+  }
+}
+* {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+@media (max-width: 700px) {
+  * {
+    font-size: 11px;
+  }
+}
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+h1.my-heading{
+  font-size: x-large;
+}
+ul {
+  list-style-type: circle;
+  padding-left: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem; 
+}
+
+p.my-paragraph {
+  margin: 0; 
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+hr {
+  background-color: black;
+  height: 2px;
+  border: none;
+  width: 99%;
+}
+.my-heading{
+font-weight: bold;
+font-size: 2rem;
+}
